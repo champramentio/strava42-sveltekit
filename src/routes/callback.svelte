@@ -18,6 +18,7 @@
 		if (result && result.error) {
 			modal('error', 'error', result.error);
 			goto('/login');
+			location.reload();
 			return;
 		}
 

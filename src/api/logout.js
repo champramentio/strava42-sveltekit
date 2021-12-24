@@ -1,11 +1,9 @@
-import api from "../services/api";
-import { userState } from "../store/index";
+import api from '../services/api';
+import { userState } from '../store/index';
 
 export const postLogout = async () => {
 	try {
-		const result = await api.post("logout");
-
-		console.log("logout", result.data);
+		const result = await api.post('logout');
 
 		if (result && result.data) {
 			userState.set();

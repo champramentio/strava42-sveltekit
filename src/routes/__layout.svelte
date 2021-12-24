@@ -35,6 +35,7 @@
 		//validate protected routes
 		if (!authed && !publicPages.includes(path)) {
 			goto('/login');
+			location.reload();
 			return;
 		}
 
@@ -53,6 +54,7 @@
 		authed = false;
 
 		goto('/login');
+		location.reload();
 	};
 </script>
 
