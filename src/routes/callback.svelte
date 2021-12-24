@@ -23,5 +23,6 @@
 		}
 
 		goto('/member/dashboard');
+		location.reload();
 	});
 </script>
